@@ -58,6 +58,10 @@
   text-decoration: none;
 }
 
+.icon-menu : before {
+  content: "\e9bd";
+}
+
 /* TODO: Now add styles for how things should look on a larger screen,
    (hint: min is in!):
 @media screen...
