@@ -1,4 +1,25 @@
-/* TODO: Add a rule for images, so they never exceed their container's width. */
+/* TODO: //DONE Add a rule for images, so they never exceed their container's width. */
+section img{
+
+  /*width: 100%;*/
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 413px) {
+    section img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    }
+}
+
+@media screen and (min-width: 414px){
+  img {
+    display: block;
+  }
+  }
 
 
 
