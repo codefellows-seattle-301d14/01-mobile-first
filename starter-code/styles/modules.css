@@ -76,7 +76,7 @@
 
 /*done*/
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:760) {
     .icon-menu {
         display: none;
     }
