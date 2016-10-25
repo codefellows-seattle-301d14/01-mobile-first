@@ -19,11 +19,10 @@
 
 }
 
-@media screen and (max-width: 500px)
-{.icon-menu {
+@media screen and (max-width: 500px){
+  .icon-menu {
   float: none;
   font-size: 1.8em;
-
 }
 
 }
@@ -39,18 +38,18 @@
   padding: 0;
   list-style: none;
   clear: both;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
 }
 
-
-
-
 .main-nav:hover ul {
-  display: block;
+  display: inline-block;
 }
 
 .main-nav li {
   margin-right: .4em;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
 }
@@ -77,7 +76,7 @@
   content: "\e9bd";
 }
 
-/* TODO: Now add styles for how things should look on a larger screen,
+/* DONE! TODO: Now add styles for how things should look on a larger screen,
    (hint: min is in!):
 @media screen...
          - Hide the hamburger.
@@ -86,14 +85,22 @@
            for a larger screen.
 */
 
-@media screen and (min-width: 600px) {
+
+
+@media screen and (min-width: 1038px) {
   .main-nav ul{
     display: inline-block;
+    width: 45%;
+    position: absolute;
+    right: -7%;
+    font-size: 1.1em;
+    text-align: left;
   }
   .icon-menu{
     display: none;
   }
   .main-nav li{
     display: inline;
+    margin-left: 5%;
   }
 }
