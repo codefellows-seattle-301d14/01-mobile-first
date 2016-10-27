@@ -1,5 +1,8 @@
 /* TODO: Add a rule for images, so they never exceed their container's width. */
-
+/*Done*/
+img{
+    max-width: 100%;
+}
 
 
 body {
@@ -14,7 +17,7 @@ hr {
 }
 
 /*TEXT STYLES
-=======================================*/
+======================================*/
 p {
   font-size: 1em;
 }

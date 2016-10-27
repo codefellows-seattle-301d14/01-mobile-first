@@ -1,62 +1,68 @@
 .site-header {
-  background: #FFEAAA;
+    background: #FFEAAA;
 }
+
 
 /* DONE: Float the main header to the left, to make room for the
     hamburger menu. */
+
 .heading-group-h1 {
-  float: left;
-  padding: 0 0 .2em 1em;
+    float: left;
+    padding: 0 0 .2em 1em;
 }
 
 .icon-menu {
-  /* TODO: Add styles for the icon-menu class (whether it be the
+    /* TODO: Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
+    /*DONE*/
+    float: right;
+    font-size: 40px;
 }
 
 .main-nav {
-  padding: 0.1em;
+    padding: 0.1em;
 }
 
 .main-nav ul {
-  /* NOTE: We are by defualt hiding the main nav list because we are
+    /* NOTE: We are by defualt hiding the main nav list because we are
       expecting the UI to be mobile, therefore our new icon menu
       takes its place. */
-  display: none;
-  padding: 0;
-  list-style: none;
-  clear: both;
+    display: none;
+    padding: 0;
+    list-style: none;
+    clear: both;
 }
 
 .main-nav:hover ul {
-  display: block;
+    display: block;
 }
 
 .main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
+    margin-right: .4em;
+    font-size: 1.5em;
+    padding: .5em .2em;
+    border-bottom: 1px solid #ccc;
 }
 
 #filters {
-  padding: 0;
-  list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
 .template {
-  display: none;
+    display: none;
 }
 
 .byline {
-  color: #777;
+    color: #777;
 }
 
 .byline a {
-  font-weight: bold;
-  text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
 }
+
 
 /* TODO: Now add styles for how things should look on a larger screen,
    (hint: min is in!):
@@ -66,3 +72,27 @@
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+
+
+/*done*/
+
+@media screen and (min-width:760px) {
+    .icon-menu {
+        display: none;
+    }
+    .main-nav ul li {
+        display: inline-block;
+    }
+    .main-nav ul {
+        clear: right;
+        float: right;
+        display: inline-block;
+    }
+    .main-nav:hover ul {
+        display: inline-block;
+    }
+    .main-nav li {
+        padding: 15px;
+        border-bottom: none;
+    }
+}
